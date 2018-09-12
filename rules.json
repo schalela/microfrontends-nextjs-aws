@@ -1,0 +1,7 @@
+{
+  "rules": [
+    {"pathname": "/app1", "dest": "http://localhost:3000"},
+    {"pathname": "/app2", "dest": "http://localhost:3001"},
+    {"pathname": "/app3", "dest": "http://localhost:3002"}
+  ]
+}

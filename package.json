@@ -1,0 +1,21 @@
+{
+  "name": "microfrontends-nextjs-aws",
+  "version": "1.0.0",
+  "description": "Serverless microfrontends using Next.js and AWS API Gateway",
+  "repository": "https://github.com/schalela/microfrontends-nextjs-aws",
+  "author": "Samuel C <schalela@live.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "lerna run --parallel offline & micro-proxy -r rules.json -p 9000"
+  },
+  "devDependencies": {
+    "lerna": "^3.3.1",
+    "micro-proxy": "^1.1.0",
+    "serverless": "^1.31.0",
+    "serverless-offline": "^3.25.11"
+  },
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ]
+}
